@@ -151,7 +151,7 @@ const addEmployee = async (req, res) => {
 
         if(!employeeName || !employeeId || !employeeEmail || !employeeDesignation){
             return res.json({
-                message : "Please provide all employee details"
+                message : "Please provide all the employee details"
             })
         }
         const newEmployee = await Employee.create({
